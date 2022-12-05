@@ -1,0 +1,5 @@
+﻿  链表交换.cpp
+E:\code c++\链表交换\链表交换\链表交换.cpp(178,18): warning C4101: “pos”: 未引用的局部变量
+E:\code c++\链表交换\链表交换\链表交换.cpp(178,27): warning C4101: “pos2”: 未引用的局部变量
+E:\code c++\链表交换\链表交换\链表交换.cpp(178,22): warning C4101: “pos1”: 未引用的局部变量
+  链表交换.vcxproj -> E:\code c++\链表交换\Debug\链表交换.exe

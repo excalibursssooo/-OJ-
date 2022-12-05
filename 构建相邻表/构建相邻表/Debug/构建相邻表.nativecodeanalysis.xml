@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\code c++\构建相邻表\构建相邻表\</FILEPATH>
+      <FILENAME>构建相邻表.cpp</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 Map::d。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>Map::{ctor}</FUNCTION>
+    <DECORATED>??0Map@@QAE@XZ</DECORATED>
+    <FUNCLINE>83</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Map::d</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

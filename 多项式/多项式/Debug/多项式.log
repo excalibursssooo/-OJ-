@@ -1,0 +1,7 @@
+﻿  多项式.cpp
+E:\code c++\多项式\多项式\多项式.cpp(159,18): warning C4101: “pos”: 未引用的局部变量
+E:\code c++\多项式\多项式\多项式.cpp(159,29): warning C4101: “pos2”: 未引用的局部变量
+E:\code c++\多项式\多项式\多项式.cpp(159,6): warning C4101: “i”: 未引用的局部变量
+E:\code c++\多项式\多项式\多项式.cpp(159,23): warning C4101: “pos1”: 未引用的局部变量
+E:\code c++\多项式\多项式\多项式.cpp(159,12): warning C4101: “temp”: 未引用的局部变量
+  多项式.vcxproj -> E:\code c++\多项式\Debug\多项式.exe

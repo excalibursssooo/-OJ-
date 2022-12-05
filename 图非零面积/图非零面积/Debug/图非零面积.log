@@ -1,0 +1,3 @@
+﻿  图非零面积.cpp
+E:\code c++\图非零面积\图非零面积\图非零面积.cpp(45): warning C4715: “graph::find”: 不是所有的控件路径都返回值
+  图非零面积.vcxproj -> E:\code c++\图非零面积\Debug\图非零面积.exe

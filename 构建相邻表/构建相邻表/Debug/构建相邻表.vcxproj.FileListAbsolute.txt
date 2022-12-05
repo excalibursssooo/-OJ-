@@ -1,0 +1,2 @@
+E:\code c++\构建相邻表\Debug\构建相邻表.exe.lastcodeanalysissucceeded
+E:\code c++\构建相邻表\构建相邻表\Debug\NativeCodeAnalysis.read.1.tlog
