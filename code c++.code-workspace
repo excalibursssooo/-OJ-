@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "D:/wamp64/www"
+		},
+		{
+			"path": "../vue_workplace"
 		}
 	],
 	"settings": {}
