@@ -1,0 +1,85 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../HTML"
+		},
+		{
+			"path": "../../c"
+		},
+		{
+			"path": "../../python code"
+		},
+		{
+			"path": "../../jupyter"
+		},
+		{
+			"path": "D:/wamp64/www"
+		},
+		{
+			"path": "C:/Users/15825/Desktop/光遇project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "www",
+		"files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"*.tcc": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"string_view": "cpp",
+			"xhash": "cpp",
+			"xstring": "cpp",
+			"xtree": "cpp",
+			"xutility": "cpp",
+			"random": "cpp",
+			"bitset": "cpp",
+			"cstring": "cpp",
+			"regex": "cpp",
+			"fstream": "cpp",
+			"iomanip": "cpp",
+			"istream": "cpp",
+			"sstream": "cpp",
+			"stdexcept": "cpp",
+			"system_error": "cpp",
+			"typeinfo": "cpp",
+			"charconv": "cpp",
+			"chrono": "cpp",
+			"exception": "cpp",
+			"filesystem": "cpp",
+			"format": "cpp",
+			"functional": "cpp",
+			"future": "cpp",
+			"iterator": "cpp",
+			"locale": "cpp",
+			"memory": "cpp",
+			"xiosbase": "cpp",
+			"xlocale": "cpp",
+			"xlocbuf": "cpp",
+			"xlocinfo": "cpp",
+			"xlocmes": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp"
+		},
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"askForPassword": true,
+				"driver": "MySQL",
+				"name": "wow",
+				"database": "data1",
+				"username": "root"
+			}
+		]
+	}
+}
