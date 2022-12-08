@@ -23,5 +23,9 @@
 			"path": "../python code"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"iomanip": "cpp"
+		}
+	}
 }
