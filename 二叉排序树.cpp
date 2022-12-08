@@ -178,7 +178,7 @@ void BiTree::Insert(int numl) {
 
 void BiTree::Del(int numl) {
     BiTreeNode *p = root;
-    BiTreeNode *k = new BiTreeNode;
+    BiTreeNode *k = root;
     int flag = 0;
     while (p->data != numl) {
         if (p->data < numl) {
@@ -203,19 +203,28 @@ void BiTree::Del(int numl) {
     }
     // cout << p->data << endl;
     if (p->leftChild == NULL || p->rightChild == NULL) {
-        if (p->rightChild == NULL) {
-            if (flag == 1) {
-                k->rightChild = p->leftChild;
+        if (p == k) {
+            if (p->rightChild == NULL){
+                root = p->leftChild;
             }
-            if (flag == 2) {
-                k->leftChild = p->leftChild;
+            else if (p->leftChild == NULL){
+                root = p->rightChild;
             }
-        } else if (p->leftChild == NULL) {
-            if (flag == 1) {
-                k->rightChild = p->rightChild;
-            }
-            if (flag == 2) {
-                k->leftChild = p->rightChild;
+        } else {
+            if (p->rightChild == NULL) {
+                if (flag == 1) {
+                    k->rightChild = p->leftChild;
+                }
+                if (flag == 2) {
+                    k->leftChild = p->leftChild;
+                }
+            } else if (p->leftChild == NULL) {
+                if (flag == 1) {
+                    k->rightChild = p->rightChild;
+                }
+                if (flag == 2) {
+                    k->leftChild = p->rightChild;
+                }
             }
         }
     } else {
