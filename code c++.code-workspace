@@ -21,6 +21,10 @@
 		},
 		{
 			"path": "../python code"
+		},
+		{
+			"name": "ChatGPT",
+			"path": "D:/chatGPT/ChatGPT"
 		}
 	],
 	"settings": {
