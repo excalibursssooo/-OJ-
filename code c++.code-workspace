@@ -25,11 +25,19 @@
 		{
 			"name": "ChatGPT",
 			"path": "D:/chatGPT/ChatGPT"
+		},
+		{
+			"path": "D:/bootstrap-4.6.2-examples"
+		},
+		{
+			"path": "D:/PHP-CommoditySalesSystem-master"
 		}
 	],
 	"settings": {
 		"files.associations": {
-			"iomanip": "cpp"
-		}
+			"iomanip": "cpp",
+			"iostream": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "www"
 	}
 }
