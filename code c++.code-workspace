@@ -38,6 +38,8 @@
 			"iomanip": "cpp",
 			"iostream": "cpp"
 		},
-		"liveServer.settings.multiRootWorkspaceName": "www"
+		"liveServer.settings.multiRootWorkspaceName": "www",
+		"liveServer.settings.port": 8078,
+		"powershell.cwd": "e:\\code c++"
 	}
 }
