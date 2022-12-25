@@ -33,7 +33,12 @@
 	"settings": {
 		"files.associations": {
 			"iomanip": "cpp",
-			"iostream": "cpp"
+			"iostream": "cpp",
+			"iosfwd": "cpp",
+			"ostream": "cpp",
+			"random": "cpp",
+			"queue": "cpp",
+			"stack": "cpp"
 		},
 		"liveServer.settings.multiRootWorkspaceName": "www",
 		"liveServer.settings.port": 8078,
