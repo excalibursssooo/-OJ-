@@ -48,6 +48,7 @@ void beginCook(Cook* c){
     c->prepare();
     c->tiaoliao();
     delete c;
+    c = NULL;
 }
 
 void test(){

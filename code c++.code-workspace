@@ -28,6 +28,10 @@
 		},
 		{
 			"path": "D:/bootstrap-4.6.2-examples"
+		},
+		{
+			"name": "christmasTree",
+			"path": "../christmasTree"
 		}
 	],
 	"settings": {
