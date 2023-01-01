@@ -32,6 +32,9 @@
 		{
 			"name": "christmasTree",
 			"path": "../christmasTree"
+		},
+		{
+			"path": "../Javacode_vsc"
 		}
 	],
 	"settings": {
