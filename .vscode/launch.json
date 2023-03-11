@@ -2,17 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Launch (GDB)",                
-            "type": "cppdbg",                         
-            "request": "launch",                        
-            "targetArchitecture": "x86",                
-            "program": "${workspaceRoot}\\${fileBasename}.exe",                 
-            "miDebuggerPath":"C:\\Users\\15825\\bin\\mingw64\\bin\\gdb.exe", 
-            "args": [],     
-            "stopAtEntry": false,                  
-            "cwd": "${workspaceRoot}",                  
-            "externalConsole": true,                  
-            "preLaunchTask": "g++"                  
-            }
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb",
+                "program": "${workspaceFolder}/output/main"
+            },
+            "osx": {
+                "MIMode": "lldb",
+                "miDebuggerPath": "lldb-mi",
+                "program": "${workspaceFolder}/output/main"
+            },
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb.exe",
+                "program": "${workspaceFolder}/output/main.exe"
+            },
+            "preLaunchTask": "build"
+        }
     ]
- }
+}

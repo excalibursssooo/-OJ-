@@ -16,10 +16,6 @@
 			"path": "../vue_workplace"
 		},
 		{
-			"name": "DataCastle-",
-			"path": "../jupyter/DataCastle-"
-		},
-		{
 			"path": "../python code"
 		},
 		{
@@ -30,11 +26,11 @@
 			"path": "D:/bootstrap-4.6.2-examples"
 		},
 		{
-			"name": "christmasTree",
-			"path": "../christmasTree"
+			"path": "../Javacode_vsc"
 		},
 		{
-			"path": "../Javacode_vsc"
+			"name": "vue-pure-admin",
+			"path": "../vue-pure-admin"
 		}
 	],
 	"settings": {
@@ -45,7 +41,14 @@
 			"ostream": "cpp",
 			"random": "cpp",
 			"queue": "cpp",
-			"stack": "cpp"
+			"stack": "cpp",
+			"*.tcc": "cpp",
+			"algorithm": "cpp",
+			"iterator": "cpp",
+			"numeric": "cpp",
+			"fstream": "cpp",
+			"future": "cpp",
+			"thread": "cpp"
 		},
 		"liveServer.settings.multiRootWorkspaceName": "www",
 		"liveServer.settings.port": 8078,

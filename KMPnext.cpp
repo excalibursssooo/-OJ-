@@ -18,12 +18,14 @@ int main() {
         }
         i = 0;
         j = -1;
+        int cnt = 0;
         while (i < text.length()) {
             if (j == -1 || text[i] == pat[j]) {
                 i++;
                 j++;
             } else
                 j = next[j];
+            cnt++;
             if (j == pat.length()) break;
         }
         for (int i = 0; i < pat.length(); i++) {
@@ -36,5 +38,6 @@ int main() {
             
         else
             cout << 0 << endl;
+        cout<<cnt<<endl;
     }
 }
