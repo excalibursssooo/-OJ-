@@ -5,7 +5,8 @@
             "includePath": [
                 "C:/Users/15825/bin/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
                 "C:/Users/15825/bin/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-                "C:/Users/15825/bin/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+                "C:/Users/15825/bin/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include",
+                "${workspaceFolder}/project c++ test/include"
             ],
             "defines": [
                 "_DEBUG",

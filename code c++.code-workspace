@@ -19,10 +19,6 @@
 			"path": "../python code"
 		},
 		{
-			"name": "ChatGPT",
-			"path": "D:/chatGPT/ChatGPT"
-		},
-		{
 			"path": "D:/bootstrap-4.6.2-examples"
 		},
 		{
@@ -31,6 +27,9 @@
 		{
 			"name": "vue-pure-admin",
 			"path": "../vue-pure-admin"
+		},
+		{
+			"path": "../Stata_code"
 		}
 	],
 	"settings": {

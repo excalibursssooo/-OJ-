@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "e:\\code c++\\project c++ test\\build",
+            "binaryPath": "e:\\code c++\\project c++ test\\build\\main.exe",
+            "binaryArgs": []
+        }
+    ]
+}
