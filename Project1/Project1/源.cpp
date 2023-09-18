@@ -1,91 +1,90 @@
 #include <iostream>
 using namespace std;
-class CArray {
-public:
-    CArray() {
-    }
-    CArray(int nValue, int mValue) :
-        n(nValue), m(mValue) {
-        data = new int *[n];
-        for (int i = 0; i < n; i++)
-            data[i] = new int[m];
-    }
-    CArray(const CArray &a) {
-        n = a.n;
-        m = a.m;
-        data = new int *[n];
-        for (int i = 0; i < n; i++)
-            data[i] = new int[m];
-        for (int i = 0; i < n; ++i)
-            for (int j = 0; j < m; j++)
-                data[i][j] = a.data[i][j];
-    }
-    CArray &operator=(const CArray &a)
-    //要重载=号，不重载就是浅拷贝
-    {
-        if (data != NULL) {
-            for (int i = 0; i < n; i++)
-                delete[] data[i];
-            delete[] data;
-        }
-        n = a.n;
-        m = a.m;
-        data = new int *[n];
-        for (int i = 0; i < n; i++)
-            data[i] = new int[m];
-        for (int i = 0; i < n; ++i)
-            for (int j = 0; j < m; j++)
-                data[i][j] = a.data[i][j];
-        return *this;
-    }
-    ~CArray() {
-        for (int i = 0; i < n; i++)
-            delete[] data[i];
-        delete[] data;
-    }
-    /*operator int**()
-		{
-			return data;
-		}*/
-    int *const operator[](const int k) {
-        return data[k];
-    }
-    int operator()(int i, int j) {
-        return data[i][j];
-    }
 
-private:
-    int n, m;
-    int **data;
+class Vehicle {
+protected:
+    int weight;
+
+public:
+    Vehicle(int a) {
+        weight = a;
+        cout << "载入Vehicle类构造函数" << endl;
+    }
+    void setWeight(int a) {
+        weight = a;
+        cout << "重新设置重量" << endl;
+    }
+    virtual void display() {
+        cout << "重量：" << weight << "吨";
+    }
+};
+
+class Car : virtual public Vehicle {
+protected:
+    int aird;
+
+public:
+    Car(int a, int b) :
+        Vehicle(a) {
+        aird = b;
+        cout << "载入Car类构造函数" << endl;
+    }
+    void setAird(int a) {
+        aird = a;
+        cout << "重新设置空气排量" << endl;
+    }
+    virtual void display() {
+        cout << "空气排量：" << aird << "CC";
+    }
+};
+
+class Boat : virtual public Vehicle {
+protected:
+    double tonnage;
+
+public:
+    Boat(int a, double b) :
+        Vehicle(a) {
+        tonnage = b;
+        cout << "载入Boat类构造函数" << endl;
+    }
+    void setTonnage(double a) {
+        tonnage = a;
+        cout << "重新设置排水量" << endl;
+    }
+    virtual void display() {
+        cout << "排水量：" << tonnage << "吨";
+    }
+};
+
+class AmphibianCar : virtual public Car, virtual public Boat {
+public:
+    AmphibianCar(int a, int b, double c) :
+        Vehicle(a),  Car(a, b) ,  Boat(a, c){
+        cout << "载入AmphibianCar类构造函数" << endl;
+    }
+    void set(int a, int b, double c) {
+        setWeight(a);
+        setAird(b);
+        setTonnage(c);
+    }
+    void display() {
+        Vehicle::display();
+        cout << "，";
+        Car::display();
+        cout << "，";
+        Boat::display();
+        cout << endl;
+    }
 };
 
 int main() {
-    int t;
-    int n, m;
-    int i, j;
-    cin >> t;
-    while (t--) {
-        cin >> n >> m;
-        CArray matrixA(n, m);
-        for (i = 0; i < n; ++i)
-            for (j = 0; j < m; j++)
-                cin >> matrixA[i][j];
-        cout << "MatrixA:" << endl;
-        for (i = 0; i < n; ++i) {
-            for (j = 0; j < m; j++) {
-                cout << matrixA(i, j) << " ";
-            }
-            cout << endl;
-        }
-        cout << "MatrixB:" << endl;
-        CArray matrixB;
-        matrixB = matrixA;
-        for (i = 0; i < n; i++) {
-            for (j = 0; j < m; j++) {
-                cout << matrixB[i][j] << " ";
-            }
-            cout << endl;
-        }
-    }
-    return 0;
+    int a, b;
+    double c;
+    cin >> a >> b >> c;
+    AmphibianCar A(a, b, c);
+    A.display();
+    cin >> a >> b >> c;
+    A.set(a, b, c);
+    A.display();
 }

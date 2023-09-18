@@ -1,4 +1,0 @@
-﻿  ConsoleApplication1.cpp
-ConsoleApplication1.obj : error LNK2001: 无法解析的外部符号 "int * L" (?L@@3PAHA)
-ConsoleApplication1.obj : error LNK2001: 无法解析的外部符号 "int * M" (?M@@3PAHA)
-E:\code c++\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe : fatal error LNK1120: 2 个无法解析的外部命令

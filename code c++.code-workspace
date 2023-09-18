@@ -16,12 +16,6 @@
 			"path": "../vue_workplace"
 		},
 		{
-			"path": "../python code"
-		},
-		{
-			"path": "D:/bootstrap-4.6.2-examples"
-		},
-		{
 			"path": "../Javacode_vsc"
 		},
 		{
@@ -29,7 +23,7 @@
 			"path": "../vue-pure-admin"
 		},
 		{
-			"path": "D:/MaaAssistantArknights-4.18.1"
+			"path": "../python_code"
 		}
 	],
 	"settings": {
@@ -112,6 +106,10 @@
 		},
 		"liveServer.settings.multiRootWorkspaceName": "www",
 		"liveServer.settings.port": 8078,
-		"powershell.cwd": "e:\\code c++"
+		"powershell.cwd": "e:\\code c++",
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.autopep8"
+		},
+		"python.formatting.provider": "none"
 	}
 }
